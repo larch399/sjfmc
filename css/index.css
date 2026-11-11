@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header>.top {
+    background: #E8E9EB;
+    height: 30px;
+}
+
+header>.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 210px;
+}
+
+.logo>img {
+    width: 170px;
+}
+
+.menu_group {
+    display: flex;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.menu_group>a {
+    font-family: 'NanumSquare';
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    margin: 0 30px;
+    border-bottom: 4px solid transparent;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.menu_group>a:hover {
+    color: #1c4ea1;
+    border-bottom-color: #1c4ea1;
+}
+
+.sns_group {
+    display: flex;
+    column-gap: 5px;
+    padding: 0 0 0 10px;
+}
+
+.sns {
+    display: inline-block;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.sns.insta {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.sns.blog {
+    display: flex !important;
+    background: #31b449;
+}
+
+.sns.facebook {
+    background: #4867aa;
+}
+
+.sns.youtube {
+    background: #ed3023;
+}
+
+.sns>i,
+.sns>img {
+    font-size: 16px;
+    color: #FFF;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+}
+
+.sns.insta>i {
+    font-size: 20px;
+}
